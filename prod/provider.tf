@@ -8,7 +8,7 @@ terraform {
   }
 }
 provider "google" {
-  project = "digger-landing"
+  project = "floorball-fantasy"
   region  = "europe-west2"
   zone    = "europe-west2-a"
 }

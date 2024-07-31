@@ -5,7 +5,7 @@ remote_state {
     if_exists = "overwrite_terragrunt"
   }
   config = {
-    bucket = "digger-demo-terragrunt-gcp-backend"
+    bucket = "digger-demo-terragrunt-gcp-backend-floorball-fantasy"
     prefix = "${path_relative_to_include()}/terraform.tfstate"
     project = "digger-landing"
     location  = "europe-west2"
@@ -25,7 +25,7 @@ terraform {
   }
 }
 provider "google" {
-  project = "digger-landing"
+  project = "floorball-fantasy"
   region  = "europe-west2"
   zone    = "europe-west2-a"
 }

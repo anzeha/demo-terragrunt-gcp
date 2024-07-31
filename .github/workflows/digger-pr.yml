@@ -26,6 +26,8 @@ jobs:
     - name: digger run
       uses: diggerhq/digger@v0.4.6
       with:
+        setup-google-cloud: true
+        google-auth-credentials: '${{ secrets.GCP_CREDENTIALS }}'
         setup-terragrunt: true
         disable-locking: true
         no-backend: true

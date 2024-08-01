@@ -7,8 +7,8 @@ remote_state {
   config = {
     bucket = "digger-demo-terragrunt-gcp-backend-floorball-fantasy"
     prefix = "${path_relative_to_include()}/terraform.tfstate"
-    project = "digger-landing"
-    location  = "europe-west2"
+    project = "floorball-fantasy"
+    location  = "europe-west4"
   }
 }
 
@@ -26,8 +26,8 @@ terraform {
 }
 provider "google" {
   project = "floorball-fantasy"
-  region  = "europe-west2"
-  zone    = "europe-west2-a"
+  region  = "europe-west4"
+  zone    = "europe-west4-a"
 }
 EOF
 }

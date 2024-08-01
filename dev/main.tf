@@ -18,3 +18,5 @@ resource "google_compute_instance" "vm_instance" {
     }
   }
 }
+resource "null_resource" "test4" {
+}
